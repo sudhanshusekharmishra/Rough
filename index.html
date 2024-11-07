@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="login.css">
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.0/firebase-ui-auth.css" />
+    
+    <script src="https://kit.fontawesome.com/94d8cc078f.js" crossorigin="anonymous"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body> 
+        <div class="overlay">
+        <h1 class="siteTitle" data-text="Entertainment">
+            <span><i class="fas fa-pizza-slice"></i></i></span>
+                hungry hound
+            <span><i class="fas fa-pizza-slice"></i></i></span></h1>
+        </div>
+        <div class="loginCard">
+            <h2 class="cardtitle">
+                HUNGRY H<span><i class="fas fa-broadcast-tower"></i></span> OUND<span></i></span>
+            </h2>
+
+            <form id="loginForm">
+                <div  class="input">
+                    <input id="email" style="color: white;" type="email" placeholder="user email"required>
+                </div>
+                <div class="input">
+                    <input id="password" style="color: white;" type="password"  placeholder="password (7-digit)"required >
+                </div>
+                <div class="input blk">
+                    <button id="submit">
+                        <span></span>
+                         <a href="./home.html" class="lin" onclick="alert('LoginIn Successfull!')">login</a>
+                    </button>
+                </div>
+                <div class="input blk">
+                    <button id="submit">
+                        <span></span>
+                         <a href="./signup.html" class="lin">signup</a>
+                    </button>               
+            </form>
+        </div>
+</body>
+</html>

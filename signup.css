@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif ;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(img/bg5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.overlay{
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100vh;
+
+}
+
+.siteTitle{
+    font-family: cursive;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    font-size: 3.0rem;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%);
+    
+    text-shadow: 0 0 30px #2cd5ff;
+}
+
+.siteTitle i
+{
+    font-size: 3rem;
+    
+}
+
+.siteTitle::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    background:#03c2c2;
+    opacity: 0.4;
+    filter:blur(30px);
+}
+
+.loginCard{
+    color:white;
+    border-radius: 1rem 0rem;
+    width:25rem;
+    height: 28rem;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 1rem;
+    background:rgba(26, 23, 23, 0.3);
+    border: 3px double cyan;
+}
+
+.loginCard::before{
+
+    content:'';
+    border-radius: 1rem 0rem;
+    position: absolute;
+    background:rgba(7, 7, 7, 0.2);
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    z-index: -1;
+    filter:blur(1px);
+}
+
+.loginCard::after{
+
+    border-radius: 1rem orem ;
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    bottom: -5px;
+    right: -5px;
+    z-index: -1;
+    pointer-events: none;
+    /* background: linear-gradient(45deg, rgb(100, 61, 126) 0%, rgb(74, 132, 240) 50%, rgb(245, 22, 133) 100%); */
+    animation:  animate 4s linear infinite;
+}
+
+ @keyframes animate 
+{
+    0%
+    {
+        filter:blur(50px) hue-rotate(0deg);
+    }
+
+    100%
+    {
+        filter: blur(50px) hue-rotate(360deg);
+    }
+ }  
+
+.loginCard .input
+{
+    width: 100%;
+    margin-top:1rem;
+    margin-left: 2rem;
+    
+}
+
+.lin{
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+}
+
+.loginCard .input input{
+
+    width: 90%;
+    background: transparent;
+    border: 2px solid rgba(24, 223, 223, 0.555);
+    border-radius: 9px;
+    border-bottom: 2px solid rgba(24, 223, 223, 0.555);
+    outline: none;
+    font-size: 1.2rem;
+    color: rgba(8, 8, 8, 0.8);
+    padding: 1rem 1rem;
+    
+    
+    
+}
+#text{
+    width: 44%;
+    background: transparent;
+    border: 2px solid rgba(24, 223, 223, 0.555);
+    border-radius: 9px;
+    border-bottom: 2px solid rgba(24, 223, 223, 0.555);
+    outline: none;
+    font-size: 1.2rem;
+    color: rgba(8, 8, 8, 0.8);
+    padding: 1rem 1rem;
+}
+
+.loginCard .input input:after{
+    background: #ff0055;
+}
+
+::placeholder{
+    color:rgba(245, 236, 236, 0.8);
+    font-family: cursive;
+}
+
+#text ::placeholder{
+    color:rgba(245, 236, 236, 0.8);
+    font-family: cursive;
+    /* font-size: 100px; */
+}
+
+.loginCard  button
+{
+    font-size: 1rem;
+    color: rgba(255,255,255,0.7);
+    padding: 0.8rem 0rem;
+    width: 40%;
+    border: 2px solid rgba(24, 223, 223, 0.555);
+    font-weight: 600;
+    outline: none;
+    max-width: 150px;
+    background: transparent;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 0rem;
+}
+
+
+
+/* .loginCard button:hover{
+    
+} */
+
+.loginCard p 
+{
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.4);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 5rem;
+}
+.loginCard p a{
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.4);
+    text-decoration: underline;
+   
+}
+.loginCard .cardtitle
+{
+    margin-top: 0;
+    padding: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color:rgba(255,255,255,0.7);
+}
+
+.blk{
+    display: inline;
+}
+
+
+
+
+button{
+position: relative;
+display: inline-block;
+padding:15px,30px;
+color: #2196f3;
+Letter-spacing: 4px;
+text-decoration:none;
+font-size:24px;
+overflow:hidden;
+transition:0.2s;
+}
+
+button:hover{
+color:#255784;
+background: rgba(7, 4, 4, 0.7);
+box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+transition-delay: 0.2s;
+}
+
+
+button span
+{
+position: absolute;
+display: block;
+
+}
+
+button span:nth-child(1)
+{
+top:0;
+left: -100%;
+width: 100%;
+height: 2px;
+background:linear-gradient(90deg,transparent,#2196f3);
+}
+
+button:hover span:nth-child(1)
+{
+left: 100%;
+transition:2s;
+}
+
+
+button span:nth-child(3)
+{
+bottom:0;
+right: -100%;
+width: 100%;
+height: 2px;
+background:linear-gradient(270deg,transparent,#2196f3);
+}
+
+button:hover span:nth-child(3)
+{
+right: 100%;
+transition:2s;
+transition-delay:0.2s;
+}	
+
+
+button span:nth-child(2)
+{
+top:-100%;
+right:0 ;
+width: 2px;
+height: 100%;
+background:linear-gradient(180deg,transparent,#2196f3);
+}
+
+button:hover span:nth-child(2)
+{
+top: 100%;
+transition:2s;
+transition-delay:0.2s;
+}	
+
+
